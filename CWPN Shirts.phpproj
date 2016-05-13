@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>CWPN Shirts</Name>
+    <ProjectGuid>{e21c53f3-e0f9-4ae4-ae60-2f5d501a2589}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <SpecificPageValue>shirts.php</SpecificPageValue>
+    <StartAction>SpecificPage</StartAction>
+    <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>5.6</RuntimeVersion>
+    <EnvName>PHPDev</EnvName>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <PHPDevAutoPort>true</PHPDevAutoPort>
+    <PHPDevPort>9000</PHPDevPort>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="OrderComplete.php" />
+    <Compile Include="phpInfo.php" />
+    <Compile Include="save\paypalfunctions.php" />
+    <Compile Include="common.php" />
+    <Compile Include="cwpn_hg16_hoodie.jpg" />
+    <Compile Include="cwpn_hg16_hoodie_small.jpg" />
+    <Compile Include="cwpn_hg16_mens_tshirt.jpg" />
+    <Compile Include="cwpn_hg16_mens_tshirt_small.jpg" />
+    <Compile Include="cwpn_hg16_womens_tshirt.jpg" />
+    <Compile Include="cwpn_hg16_womens_tshirt_small.jpg" />
+    <Compile Include="payment.php" />
+    <Compile Include="paypalfunctions.php" />
+    <Compile Include="PaypalInvoice.php" />
+    <Compile Include="PayPalPayment.php" />
+    <Compile Include="shirts.php" />
+    <Compile Include="trace.log" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="save" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="header.jpg" />
+    <Content Include="OrderComplete.html" />
+  </ItemGroup>
+</Project>
